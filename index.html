@@ -22,9 +22,9 @@
   <link rel="stylesheet" href="lib/css/oceanicnext.css">
 
   <!-- icons -->
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
   <!-- Printing and PDF exports -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script>
     var link = document.createElement('link');
     link.rel = 'stylesheet';
@@ -46,18 +46,97 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div class="slides">
 
-      <!-- intro -->
       <section>
         <img src="img/ionic-sdk-landscape-white-1024.png" class="logo" width="550" style="display:block; margin:auto; margin-bottom:100px;">
-        <h1 style="font-size:75px">V2 and Beyond</h1>
-        <p>Justin James | <a href="https://twitter.com/adamdbradley">@digitaldrummerj</a></p>
-        <p style="font-size:18px">
-          <a href="https://github.com/digitaldrummerj-ionic/ionic-v2-and-beyond/">https://github.com/digitaldrummerj-ionic/ionic-v2-and-beyond/</a>
-        </p>
+        <h1 style="font-size:60px">BUILDING CROSS-PLATFORM APPS WITH IONIC 2</h1>
       </section>
 
       <section>
-        <h2>Before we jump into things...</h2>
+        <h1 class="dark-shadow" style="font-size:75px">Justin James</h1>
+        <p style="text-transform: uppercase" class="dark-shadow">Web Developer And Speaker</p>
+        <ul class="dark-shadow" style="list-style-type: none;">
+          <li style="padding: 0 0 0 70px;background:url(img/marker.png) no-repeat 0 8px;">Phoenix, Az, USA</li>
+          <li style="padding: 0 0 0 70px;background:url(img/twitter.png) no-repeat 0 16px;">
+            <a href="https://twitter.com/digitaldrummerj" target="_blank" style="text-decoration:none">@digitaldrummerj</a>
+          </li>
+          <li style="padding: 0 0 0 70px;background:url(img/github.png) no-repeat 0 17px;">
+            <a href="https://github.com/digitaldrummerj" target="_blank" style="text-decoration:none">
+              digitaldrummerj</a>
+          </li>
+          <li style="padding: 0 0 0 70px;background:url(img/world-small.png) no-repeat 0 17px;">
+            <a href="http://digitaldrummerj.me" target="_blank" style="text-decoration:none">
+              digitaldrummerj.me</a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <img src="img/mobile-innovation.png">
+        <img src="img/10x-faster.png" class="fragment">
+        <img src="img/2x-faster.png" class="fragment">
+        <img src="img/3x-faster.png" class="fragment">
+
+      </section>
+      <section>
+        <h3>Apps Dominate</h3>
+        <img src="img/apps-dominate.png" width="600" height="600">
+      </section>
+      <section>
+        <h3>I wanted to build a mobile app too!</h3>
+      </section>
+      <section>
+        <img src="img/touch-my-monkey.png">
+      </section>
+      <section data-transition="none">
+        <h3>Traditional Dev Strategy</h3>
+        <img src="img/native-dev.png" style="max-height:inherit !important;max-width:inherit !important">
+      </section>
+      <section data-transition="none">
+        <h3>Traditional Dev Strategy</h3>
+        <img src="img/native-dev-2.png" style="max-height:inherit !important;max-width:inherit !important">
+      </section>
+      <section>
+        <img src="img/pulling-out-hair.png">
+      </section>
+      <section>
+        <img src="img/crazy-rock.jpg" style="width:150%;height:150%">
+      </section>
+      <section>
+        <img src="img/fast-forward.png" style="width:50%;height:50%">
+        <h3>2014</h3>
+      </section>
+      <section>
+        <img src="img/road-trip.jpg">
+      </section>
+      <section>
+        <img src="img/ionic-sdk-landscape-white-1024.png">
+      </section>
+      <section data-transition="none">
+        <h3>Hybrid Dev Strategy</h3>
+        <img src="img/hybrid-dev.png" style="max-height:inherit !important;max-width:inherit !important">
+      </section>
+      <section data-transition="none">
+        <h3>Hybrid Dev Strategy</h3>
+        <img src="img/hybrid-dev-2.png" style="max-height:inherit !important;max-width:inherit !important">
+      </section>
+
+      <section data-transition="none">
+        <h3>Hybrid Dev Strategy</h3>
+        <img src="img/hybrid-dev-3.png" style="max-height:inherit !important;max-width:inherit !important">
+      </section>
+      <section>
+        <img src="img/cordova.png">
+        <h1>Apache Cordova</h1>
+
+        <ul style="list-style:none;text-align:center;line-height:2em">
+          <li style="">Open Source Middleware</li>
+          <li style=" white-space: nowrap;">Bundles Web Code Into A Mobile Application</li>
+        </ul>
+
+      </section>
+
+      <section>
+        <h2>Before we jump into Ionic v2 ...</h2>
       </section>
 
       <!-- ionic v1 -->
@@ -112,8 +191,11 @@
       </section>
 
       <!-- ionic-v1 is great -->
+
       <section>
         <h2> Ionic V1 is great</h2>
+        <p class="fragment">Validated the hybrid approach</p>
+        <p class="fragment">Built during iOS 6 / Android 2.3 - 4.3</p>
         <p class="fragment">But a lot's changed since its release</p>
 
         <aside class="notes">
@@ -124,32 +206,28 @@
         </aside>
       </section>
 
-      <section data-background="http://classiccmp.org/dunfield/nec/h/apc.jpg">
-        <h3>3 years is a long time in web tech!</h3>
-        <aside class="notes">
-          <p>Ionic was created 3 years ago....thats ages in web tech</p>
-          <p>We were probably doing something in Jquery and Backbone back then</p>
-          <p>But the webs come a long way since then</p>
-        </aside>
-      </section>
-
       <section>
-        <img src="img/alot-has-changed.png" width="500">
+        <img src="img/ios9-and-android-5.png" width="500">
         <div>
           <div>
             <h3>A lot's changed</h3>
             <p>ES2015/TypeScript!</p>
             <p>Better/faster devices!</p>
             <p>Widely available web APIs!</p>
+            <p>Improved browser engines!</p>
           </div>
         </div>
 
         <aside class="notes">
+          <h3>3 years is a long time in web tech!</h3>
+          <p>Ionic was created 3 years ago....thats ages in web tech</p>
+          <p>We were probably doing something in Jquery and Backbone back then</p>
+          <p>But the webs come a long way since then</p>
           <p>We have ES6 and typescript. This allows to have a better language for writing our apps</p>
           <p>We have a lot better devices, but more importantly, a lot less bad devices</p>
-          <p>We also have better browser runtimes, especially on android. Where newer versions of android update the webview separately from the OS</p>
-          <p>DID I MENTION ES6 Typescirpt? Features so nice, they had to be mentioned twice</p>
-
+          <p>We also have better browser runtimes, especially on android. Where newer versions of android update the webview
+            separately from the OS</p>
+          <p>DID I MENTION ES6 Typescript? Features so nice, they had to be mentioned twice</p>
         </aside>
       </section>
 
@@ -182,12 +260,13 @@
       <section>
         <h3>v2 Goals</h3>
         <p>Simplicity</p>
-        <p>Native UX</p>
+        <p>Performance</p>
+        <p>Native UX / Platform Continuity</p>
         <p>Navigation</p>
         <p>Tooling</p>
         <aside class="notes">
           <li>Simplicity: Can we make development with ionic even easier than it was in v1</li>
-          <li>Native UX and Design: Can we push our navtive ux even further while still making it easy to cusitmize to your brand</li>
+          <li>Native UX and Design: Can we push our native ux even further while still making it easy to customize to your brand</li>
           <li>Performance: Better perf is always a win</li>
           <li>Tooling: Making everything "just work" &#8482; </li>
         </aside>
@@ -261,7 +340,7 @@
 
               <div class="demo-frame" id="icons">
                 <div class="demo-ios">
-                  <iframe src="dist/icon/" frameborder="0"></iframe>
+                  <iframe src="dist/icon/index.html" frameborder="0"></iframe>
                 </div>
               </div>
             </div>
@@ -274,7 +353,8 @@
           <p>Doesn't change how you write your styles</p>
 
           <aside class="notes">
-            Ionic is using element properties to keep your markup clean and simple, but you can still easily use CSS classes just like you always did.
+            Ionic is using element properties to keep your markup clean and simple, but you can still easily use CSS classes just like
+            you always did.
 
           </aside>
         </section>
@@ -406,12 +486,12 @@
 
         <section>
 
-              <h3>Full Control</h3>
-              <p>Push pages on to the nav stack</p>
-              <p>Pop pages off the nav stack</p>
-              <p>Insert/Remove/Update</p>
-              <p>Create app history from nothing</p>
-              <p>Update the URL as an option</p>
+          <h3>Full Control</h3>
+          <p>Push pages on to the nav stack</p>
+          <p>Pop pages off the nav stack</p>
+          <p>Insert/Remove/Update</p>
+          <p>Create app history from nothing</p>
+          <p>Update the URL as an option</p>
 
         </section>
 
@@ -456,8 +536,7 @@
           <h3>TypeScript</h3>
           <blockquote>"It is just JavaScript - just with the seat belt fastened."</blockquote>
           <p style="font-size: 18px">
-            <a href="http://teropa.info/blog/2016/05/19/things-that-excite-me-about-angular-2.html">Things that Excite Me about Angular 2</a>
-            - <a href="https://twitter.com/teropa">@teropa</a>
+            <a href="http://teropa.info/blog/2016/05/19/things-that-excite-me-about-angular-2.html">Things that Excite Me about Angular 2</a>            - <a href="https://twitter.com/teropa">@teropa</a>
           </p>
         </section>
 
@@ -489,7 +568,9 @@
         </section>
 
         <section>
-          <blockquote>With all these tools, it can be somewhat confusing for people to know what the differences are or even where to start</blockquote>
+          <blockquote>With all these tools, it can be somewhat confusing for people to know what the differences are or even where to
+            start
+          </blockquote>
         </section>
 
         <section>
@@ -515,17 +596,92 @@
       </section>
 
       <section>
-        <h3>Want to give it a try?</h3>
+        <h4>Want to give it a try?</h4>
 
-        <p>
+        <h2>
           <a href="http://ionic.io/2" target="_blank">ionic.io/2</a>
-        </p>
+        </h2>
+      </section>
+      <section>
+        <h2>Required Software</h2>
+        <div flex>
+          <div col style="margin: 0;padding: 10px 50px 10px 25px; border: 1px solid white;">
+            <h4>Android</h4>
+
+            <ul style="list-style:none;white-space: nowrap;margin: 0;padding-right:10px">
+              <li>Windows/Linux/OSx</li>
+              <li>Java SDK 8</li>
+              <li>Android SDK</li>
+              <li>Android Studio</li>
+              <li>Google Chrome</li>
+              <li>Google Developers Account</li>
+              <li>Visual Studio Android Emulator</li>
+            </ul>
+
+          </div>
+          <div class="fragment" col style="margin: 0;padding: 10px 10px 10px 25px; border: 1px solid white;">
+            <h4>iOS</h4>
+            <ul style="list-style:none;white-space: nowrap;margin: 0;">
+              <li>OSx Only</li>
+              <li>Xcode</li>
+              <li>Xcode Command Line Tools</li>
+              <li>iOS Simulator</li>
+              <li>Safari</li>
+              <li>Apple Developers Accounts</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </section>
+      <section>
+        <h2>Install Guides</h2>
+        <a href="http://digitaldrummerj.me/Ionic-Setup-Windows/" target="_blank">digitaldrummerj.me/Ionic-Setup-Windows/ </a>
+        <a href="http://digitaldrummerj.me/ionic-setup-osx/" target="_blank">digitaldrummerj.me/ionic-setup-osx/</a>
       </section>
 
       <section>
+        <h2>Ionic Resources</h2>
+        <ul>
+          <li>Web Site – <a href="http://ionicframework.com" target="_blank">ionicframework.com</a></li>
+          <li>Docs - <a href="http://ionicframework.com/docs/v2" target="_blank">ionicframework.com/docs/v2</a></li>
+          <li>Meetups – <a href="http://blog.ionic.io/ionic-worldwide" target="_blank">blog.ionic.io/ionic-worldwide</a></li>
+          <li>Slack - <a href="http://ionicworldwide.herokuapp.com" target="_blank">ionicworldwide.herokuapp.com</a></li>
+          <li>Forums - <a href="http://forum.ionicframework.com" target="_blank">forum.ionicframework.com</a></li>
+          <li>Cordova Plugins - <a href="http://ionicframework.com/docs/v2/native/" target="_blank">ionicframework.com/docs/v2/native/</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Ionic Blogs</h2>
+        <ul>
+          <li><a href="http://digitaldrummerj.me/categoryview/#ionic" target="_blank">digitaldrummerj.me/categoryview/#ionic</a></li>
+          <li><a href="http://mcgivery.com/15-ionic-framework-2-resources/" target="_blank">mcgivery.com/15-ionic-framework-2-resources/</a></li>
+          <li><a href="http://joshmorony.com/category/ionic-tutorials" target="_blank">joshmorony.com/category/ionic-tutorials</a></li>
+          <li><a href="http://thepolyglotdeveloper.com" target="_blank">thepolyglotdeveloper.com</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div flex>
+          <div col center>
+        <img src="img/ionic-2-book-cover-image.png">
+          </div>
+          <div col>
+            <br />
+            <h4>Great Book for Learning Ionic v2</h4>
+            <br />
+            <p><a href="https://www.joshmorony.com/building-mobile-apps-with-ionic-2/" target="_blank">joshmorony.com/building-mobile-apps-with-ionic-2/</a></p>
+        </div>
+        </div>
+      </section>
+      <section>
+        <img src="img/go-build.png">
+      </section>
+      <section>
         <h3>Thank you!</h3>
         <h3><code>&lt;/html&gt;</code></h3>
-        <a href="https://twitter.com/adamdbradley" target="_blank">@digitaldrummerj</a>
+        <a href="https://twitter.com/digitaldrummerj" target="_blank">@digitaldrummerj</a><br />
+        <a href="http://digitaldrummerj.me/ionic-v2-and-beyond/#/" target="_blank">digitaldrummerj.me/ionic-v2-and-beyond/</a>
       </section>
 
     </div>
@@ -538,7 +694,7 @@
     // Full list of configuration options available at:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
-      slideNumber: true,
+      slideNumber: 'h.v / t',
       controls: true,
       progress: true,
       history: true,
