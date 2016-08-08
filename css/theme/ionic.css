@@ -317,7 +317,8 @@ body {
     box-shadow: none; }
   .reveal table td, .reveal table th {
     border: 0;
-    background: rgba(0, 0, 0, 0.15); }
+    /*background: rgba(0, 0, 0, 0.15); */
+    }
   .reveal table th {
     text-transform: uppercase;
     background: rgba(0, 0, 0, 0.4); }
@@ -418,6 +419,10 @@ body {
   .reveal .code-left {
     width: 60%;
     text-align: left; }
+  .reveal .code-left pre code {
+    font-size: 1.3em;
+
+  }
   .reveal .flex {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -437,8 +442,8 @@ body {
   .reveal pre[col],
   .reveal pre code {
     background-color: #22272f;
-    font-size: 20px;
-    line-height: 26px; }
+    font-size: 1.5em;
+    line-height: 1.3em; }
   .reveal pre[col] {
     margin: 0;
     padding: 30px; }

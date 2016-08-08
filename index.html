@@ -78,21 +78,17 @@
 
         </section>
         <section>
-          <h3>Apps Dominate</h3>
-          <img src="img/apps-dominate.png" width="600" height="600">
-        </section>
-        <section>
           <h3>I wanted to build a mobile app too!</h3>
         </section>
         <section>
           <img src="img/touch-my-monkey.png">
         </section>
         <section data-transition="none">
-          <h3 style="white-space: nowrap;">Traditional Dev Strategy</h3>
+          <h3 style="white-space: nowrap;">Traditional Strategy</h3>
           <img src="img/native-dev.png" style="max-height:inherit !important;max-width:inherit !important">
         </section>
         <section data-transition="none">
-          <h3 style="white-space: nowrap;">Traditional Dev Strategy</h3>
+          <h3 style="white-space: nowrap;">Traditional Strategy</h3>
           <img src="img/native-dev-2.png" style="max-height:inherit !important;max-width:inherit !important">
         </section>
         <section>
@@ -112,16 +108,16 @@
           <img src="img/ionic-sdk-landscape-white-1024.png">
         </section>
         <section data-transition="none">
-          <h3>Hybrid Dev Strategy</h3>
+          <h3>Hybrid Strategy</h3>
           <img src="img/hybrid-dev.png" style="max-height:inherit !important;max-width:inherit !important">
         </section>
         <section data-transition="none">
-          <h3>Hybrid Dev Strategy</h3>
+          <h3>Hybrid Strategy</h3>
           <img src="img/hybrid-dev-2.png" style="max-height:inherit !important;max-width:inherit !important">
         </section>
 
         <section data-transition="none">
-          <h3>Hybrid Dev Strategy</h3>
+          <h3>Hybrid Strategy</h3>
           <img src="img/hybrid-dev-3.png" style="max-height:inherit !important;max-width:inherit !important">
         </section>
       </section>
@@ -132,6 +128,7 @@
         <ul style="list-style:none;text-align:center;line-height:2em">
           <li style="">Open Source Middleware</li>
           <li style="white-space: nowrap;">Bundles Web Code Into A Mobile Application</li>
+          <li style="white-space: nowrap;">Gives API to Access Device</li>
         </ul>
 
       </section>
@@ -150,7 +147,7 @@
           height: 100%;
           opacity: 0.1; z-index: -1;"></div>
         <h3 style="font-size:80px;">Ionic V1!</h3>
-        <p>SDK for Developing Hybrid Apps</p>
+        <p>Validated the hybrid approach</p>
         <p>Focused on mobile apps first</p>
         <p>Sass for easy customization</p>
         <p>Angular for code structure</p>
@@ -175,7 +172,7 @@
       </section>
 
       <!-- the stats -->
-      <section data-background="img/ionic-stats.png">
+      <section>
         <h3>The Stats</h3>
         <p>Top 40 most popular OSS project
           <br>(23,000+ stars on GitHub)</p>
@@ -194,8 +191,7 @@
       <!-- ionic-v1 is great -->
 
       <section>
-        <h2> Ionic V1 is great</h2>
-        <p class="fragment">Validated the hybrid approach</p>
+        <h2> Ionic V1 is great <span class="fragment">But...</span></h2>
         <p class="fragment">Built during iOS 6 / Android 2.3 - 4.3</p>
         <p class="fragment">But a lot's changed since its release</p>
 
@@ -208,14 +204,14 @@
       </section>
 
       <section>
-        <img src="img/ios9-and-android-5.png" width="500">
+        <img src="img/ios9-and-android-6.png" width="500">
         <div>
           <div>
             <h3>A lot's changed</h3>
             <p>ES2015/TypeScript!</p>
-            <p>Better/faster devices!</p>
-            <p>Widely available web APIs!</p>
-            <p>Improved browser engines!</p>
+            <p>Better/Faster devices!</p>
+            <p>Widely Available Web APIs!</p>
+            <p>Improved Browser Engines!</p>
           </div>
         </div>
 
@@ -245,7 +241,6 @@
       <section>
         <h3>v2 Goals</h3>
         <p>Simplicity</p>
-        <p>Performance</p>
         <p>Platform Continuity</p>
         <p>Navigation</p>
         <p>Device Access</p>
@@ -270,13 +265,13 @@
         <section>
           <h3>V1 Buttons</h3>
           <pre><code class="html">
-<a class="button button-positive"></a>
+&lt;a class="button button-positive"&gt;&lt;/a&gt;
 
-<a class="button button-outlined button-balanced"></a>
+&lt;a class="button button-outlined button-balanced"&gt;&lt;/a&gt;
 
-<a class="button button-clear button-dark"></a>
+&lt;a class="button button-clear button-dark"&gt;&lt;/a&gt;
 
-<a class="button button-assertive button-icon ion-close"></a>
+&lt;a class="button button-assertive button-icon ion-close"&gt;&lt;/a&gt;
           </code></pre>
 
           <aside class="notes">
@@ -296,6 +291,7 @@
         </section>
 
         <section>
+          <h3>V2 Buttons</h3>
           <pre><code class="html">
   &lt;button>&lt;/button&gt;
 
@@ -304,7 +300,6 @@
   &lt;button outlined secondary&gt;&lt;/button&gt;
 
   &lt;button clear dark&gt;&lt;/button&gt;
-
               </code></pre>
         </section>
 
@@ -313,23 +308,24 @@
           <div class="flex">
 
             <div class="code-left">
-              <pre><code class="html">
-<ion-icon name="ionic"></ion-icon>
+              <pre><code>
+&lt;ion-icon name="ionic"&gt;&lt;/ion-icon&gt;
 
-<ion-icon name="logo-angular"></ion-icon>
+&lt;ion-icon name="logo-angular"&gt;&lt;/ion-icon&gt;
 
-<ion-icon name="heart"></ion-icon>
+&lt;ion-icon name="heart"&gt;&lt;/ion-icon&gt;
 
-<ion-icon name="ionitron"></ion-icon>
+&lt;ion-icon name="ionitron"&gt;&lt;/ion-icon&gt;
               </code></pre>
-            </div>
-
-            <div class="demo">
               <div class="demo-buttons">
-                <button class="button" onclick="togglePlatform('icons', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
+                <span style="padding: 30px;font-size: 0.5em !important;" class="small">Change Platform:</span> <button class="button"
+                  onclick="togglePlatform('icons', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
                 <button class="button" onclick="togglePlatform('icons', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
                 <button class="button" onclick="togglePlatform('icons', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
               </div>
+            </div>
+
+            <div class="demo">
 
               <div class="demo-frame" id="icons">
                 <div class="demo-ios">
@@ -358,12 +354,20 @@
       <section>
 
         <section>
+
           <h3>Platform Continuity</h3>
-          <p>iOS, Android, Windows10</p>
-          <p>One code base</p>
-          <p>Same markup and classes</p>
-          <p>Fully customized interactions</p>
-          <img src="img/platformcont.png">
+          <div class="flex">
+
+            <div class="code-left" style="white-space: nowrap;">
+              <p>iOS, Android, Windows10</p>
+              <p>One code base</p>
+              <p>Same markup and classes</p>
+              <p>Fully customized interactions</p>
+            </div>
+            <div>
+              <img src="img/platformcont.png">
+            </div>
+          </div>
         </section>
         <section>
           <blockquote>Just makes it look right with zero coding</blockquote>
@@ -374,20 +378,16 @@
         </section>
 
         <section>
-
           <h3>All highly configurable</h3>
-
-          <pre><code class="javascript">
-  config: {
-    backButtonText: 'Go Back',
-    iconMode: 'ios',
-    modalEnter: 'modal-slide-in',
-    modalLeave: 'modal-slide-out',
-    tabbarPlacement: 'bottom',
-    pageTransition: 'ios',
-  }
-          </code></pre>
-          <p><a href="http://ionicframework.com/docs/v2/api/config/Config/" target="_blank">Config Docs</a></p>
+          <pre style="width: 70%"><code class="javascript">config: {
+  backButtonText: 'Go Back',
+  iconMode: 'ios',
+  modalEnter: 'modal-slide-in',
+  modalLeave: 'modal-slide-out',
+  tabbarPlacement: 'bottom',
+  pageTransition: 'ios',
+}      </code></pre>
+          <a href="http://ionicframework.com/docs/v2/api/config/Config/" target="_blank">Config Docs</a>
         </section>
       </section>
 
@@ -401,8 +401,7 @@
 
         <section>
           <h3>V1's Routing</h3>
-          <pre><code class="javascript" data-trim>
-.config(function($stateProvider){
+          <pre style="width: 70%"><code style="font-size: 1.2em !important;" class="javascript" data-trim>.config(function($stateProvider){
   $stateProvider
     .state('firstpage', {
       url:'/firstpage',
@@ -412,19 +411,14 @@
       url:'/secondpage',
       templateUrl: 'secondpage.html'
     })
-    .state('thirdpage', {
-      url:'/thirdpage/:id',
-      templateUrl: 'thirdpage.html'
-    });
-});
-          </code></pre>
+});</code></pre>
           <p>UI-Router</p>
         </section>
 
         <section>
-          <h3>Doesn't give the flexibility you want</h3>
-          <p>Navigation: user experience</p>
-          <p>URLs don't offer that</p>
+          <h3>Doesn't Give Us flexibility</h3>
+          <p>Navigation Constrained to URLs</p>
+          <p>No Flexibility to Control User Experience</p>
           <p>Developers <strong>NEED</strong> to be in control</p>
         </section>
 
@@ -433,39 +427,33 @@
           <div class="flex">
 
             <div class="code-left">
-              <pre><code class="javascript">
-  import {SecondPage} from './second-page';
+              <pre><code style="font-size: 1.2em !important" class="javascript">import {SecondPage} from './second-page';
 
-  export class FirstPage {
+export class FirstPage {
 
-    constructor(public nav: NavController) {};
+  constructor(public nav: NavController) {};
 
-    pushState() {
-      this.nav.push(SecondPage);
-    }
-
+  pushState() {
+    this.nav.push(SecondPage);
   }
-
+}
               </code></pre>
-            </div>
-
-            <div class="demo">
               <div class="demo-buttons">
+                <span style="padding: 30px;font-size: 0.5em !important;" class="small">Change Platform:</span>
                 <button class="button" onclick="togglePlatform('params', 'demo-ios', 'ios')"><i class="icon ion-social-apple"></i></button>
                 <button class="button" onclick="togglePlatform('params', 'demo-md', 'android')"><i class="icon ion-social-android"></i></button>
                 <button class="button" onclick="togglePlatform('params', 'demo-wp', 'windows')"><i class="icon ion-social-windows"></i></button>
               </div>
 
+            </div>
+
+            <div class="demo">
               <div class="demo-frame" id="params">
                 <div class="demo-ios">
                   <iframe src="dist/nav-params/" frameborder="0"></iframe>
                 </div>
-
               </div>
-
-
             </div>
-
           </div>
           <aside class="notes">
             <li>Heavily inspired by native implimentations</li>
@@ -478,7 +466,6 @@
           <h3>Full Control</h3>
           <p>Push pages on to the nav stack</p>
           <p>Pop pages off the nav stack</p>
-          <p>Insert/Remove/Update</p>
           <p>Create app history from nothing</p>
           <p>Update the URL as an option</p>
 
@@ -493,17 +480,25 @@
           <p class="fragment">Hello, Ionic Native</p>
         </section>
         <section>
+          <h3>ngCordova worked but...</h3>
+          <p>API wasn't consistent</p>
+          <p>Didn't provide promises or play with ES6</p>
+          <p>Tied to Angular</p>
+        </section>
+        <section>
           <h3>Ionic Native</h3>
-          <p>Easier to Use</p>
-          <p>Consistent API</p>
-          <p>Plays nicely with Typescript and ES6</p>
-          <p>Works with Ionic v1 and v2</p>
           <p>Framework Agnostic</p>
+          <p>Consistent API</p>
+          <p>Easier to Use</p>
+          <p>Plays Nice with Typescript & ES6</p>
+          
+          <p>&nbsp;</p>
+          <p><a href="http://ionicframework.com/docs/v2/native/ " target="_blank ">ionicframework.com/docs/v2/native/</a></p>
+
           <aside class="notes">
             <p>Provides TypeScript decorators</p>
-            <p>Adds Promise, Observalbe and Typing Support</p>
+            <p>Adds Promise, Observable and Typing Support</p>
             <p>Makes Available As a Module</p>
-
           </aside>
         </section>
       </section>
@@ -521,7 +516,6 @@
           <p>Typescript builds on top of that</p>
           <p>Ionic 2 and NG2 built using TS</p>
           <p>All of this, helping you to developer faster</p>
-
           <aside class="notes">
             <li>ES5 has served us well</li>
             <li>ES6 gives us many new features</li>
@@ -538,12 +532,12 @@
         <section>
           <h3>Tooling galore</h3>
           <p>
-            <strong>Bundlers</strong>
+            <strong>BUNDLERS</strong>
           </p>
           <p>Rollup, Webpack, Browserify, System.js</p>
 
           <p>
-            <strong>Modules</strong>
+            <strong>MODULES</strong>
           </p>
           <p>AMD, UMD, CommonJS, System.js, ES6</p>
         </section>
@@ -555,19 +549,15 @@
         </section>
 
         <section>
-          <h3>Don't worry, Ionic's got your back!</h3>
-
-        </section>
-
-        <section>
           <h3>Ionic CLI</h3>
           <p>Focus on writing your app</p>
-          <p>Our build system handles everything else!</p>
-          <p>It <em>"just works"</em>&#8482;</p>
+          <p>The build system handles everything else!</p>
+          <p><em>It Just Works</em></p>
         </section>
       </section>
       <section>
         <h1>Demo</h1>
+        <p><a href="https://github.com/driftyco/ionic-conference-app" target="_blank">https://github.com/driftyco/ionic-conference-app</a>
       </section>
       <section>
         <section>
@@ -585,8 +575,8 @@
             <li class="fragment" data-fragment-index="1">Install <a href="https://msysgit.github.io/" target="_blank">Git</a></li>
             <li class="fragment" data-fragment-index="2">Globally install npm packages</li>
           </ul>
-          <pre class="fragment" data-fragment-index="2"><code>
-              $ npm install -g gulp bower cordova ionic@beta
+          <pre class="fragment" data-fragment-index="2" style="text-align: center !important"><code>
+$ npm install -g gulp bower cordova ionic@beta
 
 </code></pre>
         </section>
@@ -617,7 +607,8 @@
               <tr>
                 <td class="fragment" data-fragment-index="6" colspan="2" style="padding: 0;border-bottom: 0;vertical-align:top;">
                   <ul style="line-height: 1em;">
-                    <li>Visual Studio Android Emulator <br />or <br />Genymotion Emulator</li>
+                    <li>Visual Studio Android Emulator</li>
+                   <li>Genymotion Emulator</li>
                   </ul>
                 </td>
               </tr>
@@ -638,11 +629,17 @@
         <section>
           <h2>Step-by-Step Guides</h2>
           <a href="http://digitaldrummerj.me/Ionic-Setup-Windows/ " target="_blank ">digitaldrummerj.me/Ionic-Setup-Windows/ </a>
+          <br />
           <a href="http://digitaldrummerj.me/ionic-setup-osx/ " target="_blank ">digitaldrummerj.me/ionic-setup-osx/</a>
         </section>
         <section>
           <h3>Create Project</h3>
           <pre class="bash" style="text-align: center !important"><code>ionic start myApp [blank/tabs/sideMenu] --v2</code></pre>
+        </section>
+        <section>
+          <h3>Add Page</h3>
+          <pre class="bash" style="text-align: center !important"><code>ionic g page firstPage</code></pre>
+              
         </section>
         <section>
           <h3>Test In Web Browser</h3>
@@ -661,12 +658,9 @@
       <section>
         <h2>Ionic Resources</h2>
         <ul>
-          <li>Web Site – <a href="http://ionicframework.com " target="_blank ">ionicframework.com</a></li>
           <li>Docs - <a href="http://ionicframework.com/docs/v2 " target="_blank ">ionicframework.com/docs/v2</a></li>
-          <li>Meetups – <a href="http://blog.ionic.io/ionic-worldwide " target="_blank ">blog.ionic.io/ionic-worldwide</a></li>
           <li>Slack - <a href="http://ionicworldwide.herokuapp.com " target="_blank ">ionicworldwide.herokuapp.com</a></li>
-          <li>Forums - <a href="http://forum.ionicframework.com " target="_blank ">forum.ionicframework.com</a></li>
-          <li>Ionic Native - <a href="http://ionicframework.com/docs/v2/native/ " target="_blank ">ionicframework.com/docs/v2/native/</a></li>
+          <li>Meetups – <a href="http://blog.ionic.io/ionic-worldwide " target="_blank ">blog.ionic.io/ionic-worldwide</a></li>
         </ul>
       </section>
       <section>
@@ -680,17 +674,18 @@
         </ul>
       </section>
       <section>
+            
         <div flex>
           <div col center>
             <img src="img/ionic-2-book-cover-image.png ">
           </div>
           <div col>
-            <br />
-            <h4>Great Book for Learning Ionic v2</h4>
-            <br />
-            <p><a href="https://www.joshmorony.com/building-mobile-apps-with-ionic-2/ " target="_blank ">joshmorony.com/building-mobile-apps-with-ionic-2/</a></p>
+            <p style="font-size: 1.3em">Great Book <br/>for Learning <br/>Ionic v2</p>
           </div>
         </div>
+                  <div row>
+              <p><a href="https://www.joshmorony.com/building-mobile-apps-with-ionic-2/ " target="_blank ">joshmorony.com/building-mobile-apps-with-ionic-2/</a></p></div>
+
       </section>
       <!-- Closing -->
       <section>
@@ -707,7 +702,17 @@
         <a href="https://twitter.com/digitaldrummerj " target="_blank ">@digitaldrummerj</a><br />
         <a href="http://digitaldrummerj.me/ionic-v2 " target="_blank ">digitaldrummerj.me/ionic-v2</a>
       </section>
+      <section>
+        <section></section>
+        <section>
+          <h1>Backup</h1>
+        </section>
+        <section>
+          <h3>Apps Dominate</h3>
+          <img src="img/apps-dominate.png" width="600" height="600">
+        </section>
 
+      </section>
     </div>
 
   </div>
@@ -725,6 +730,12 @@
       center: true,
       maxScale: 1,
       minScale: 1,
+      
+      // The "normal" size of the presentation, aspect ratio will be preserved
+      // when the presentation is scaled to fit different resolutions. Can be
+      // specified using percentage units.
+      width: 1280,
+      height: 768,
 
       transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -744,7 +755,8 @@
         condition: function() {
           return !!document.querySelector('[data-markdown]');
         }
-      }, {
+      },
+       {
         src: 'plugin/highlight/highlight.js',
         async: true,
         condition: function() {
@@ -753,7 +765,8 @@
         callback: function() {
           hljs.initHighlightingOnLoad();
         }
-      }, {
+      }, 
+      {
         src: 'plugin/zoom-js/zoom.js',
         async: true
       }, {
