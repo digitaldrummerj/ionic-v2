@@ -75,7 +75,6 @@
           <img src="img/10x-faster.png" class="fragment">
           <img src="img/2x-faster.png" class="fragment">
           <img src="img/3x-faster.png" class="fragment">
-
         </section>
         <section>
           <h3>I wanted to build a mobile app too!</h3>
@@ -132,7 +131,56 @@
         </ul>
 
       </section>
-
+      <section>
+        <section>
+          <blockquote>
+            <p>"The biggest mistake we’ve made as a company is betting on HTML 5 over native"</p>
+          </blockquote>
+          <cite>
+  Mark Zuckerberg. September, 2012 via <a target="_blank" href='http://venturebeat.com/2012/09/11/facebooks-zuckerberg-the-biggest-mistake-weve-made-as-a-company-is-betting-on-html5-over-native/'>venturebeat.com</a>
+        </cite>
+        </section>
+        <section>
+          <h2>It’s not 2007 anymore</h2>
+        </section>
+        <section>
+          <table>
+            <tbody>
+              <tr>
+                <td>Year</td>
+                <td>Device</td>
+                <td>Processor</td>
+                <td>Ram</td>
+              </tr>
+              <tr>
+                <td>2007</td>
+                <td>iPhone 1  </td>
+                <td>620 MHz                </td>
+                <td>128 MB</td>
+              </tr>
+              <tr class="fragment">
+                <td>2010</td>
+                <td>iPhone 4  </td>
+                <td>1 GHz                     <br>
+                </td>
+                <td>512 MB</td>
+              </tr>
+              <tr class="fragment">
+                <td>2014</td>
+                <td>iPhone 6  </td>
+                <td>1.4 GHz dual-core</td>
+                <td>1 GB</td>
+              </tr>
+              <tr class="fragment">
+                <td>2015</td>
+                <td>iPhone 6s</td>
+                <td>1.8 GHz dual-core</td>
+                <td>2 GB</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
       <section>
         <h2>Before we jump into Ionic v2 ...</h2>
       </section>
@@ -191,9 +239,9 @@
       <!-- ionic-v1 is great -->
 
       <section>
-        <h2> Ionic V1 is great <span class="fragment">But...</span></h2>
+        <h2>But</h2>
         <p class="fragment">Built during iOS 6 / Android 2.3 - 4.3</p>
-        <p class="fragment">But a lot's changed since its release</p>
+        <p class="fragment">A lot's changed since its release</p>
 
         <aside class="notes">
           <li>V1 is great</li>
@@ -285,7 +333,7 @@
         </section>
 
         <section>
-          <h3>Move things to properties instead</h3>
+          <h3>Move to properties instead</h3>
           <p>Easier to understand</p>
           <p>Less markup</p>
         </section>
@@ -464,7 +512,7 @@ export class FirstPage {
         <section>
 
           <h3>Full Control</h3>
-          <p>Push pages on to the nav stack</p>
+          <p>Push pages onto the nav stack</p>
           <p>Pop pages off the nav stack</p>
           <p>Create app history from nothing</p>
           <p>Update the URL as an option</p>
@@ -490,8 +538,8 @@ export class FirstPage {
           <p>Framework Agnostic</p>
           <p>Consistent API</p>
           <p>Easier to Use</p>
-          <p>Plays Nice with Typescript & ES6</p>
-          
+          <p>Plays nice with Typescript & ES6</p>
+
           <p>&nbsp;</p>
           <p><a href="http://ionicframework.com/docs/v2/native/ " target="_blank ">ionicframework.com/docs/v2/native/</a></p>
 
@@ -514,8 +562,8 @@ export class FirstPage {
           <h3>JavaScript has changed</h3>
           <p>ES6 brings many new features</p>
           <p>Typescript builds on top of that</p>
-          <p>Ionic 2 and NG2 built using TS</p>
-          <p>All of this, helping you to developer faster</p>
+          <p>Ionic 2 and Angular 2 built using TypeScript</p>
+
           <aside class="notes">
             <li>ES5 has served us well</li>
             <li>ES6 gives us many new features</li>
@@ -543,18 +591,46 @@ export class FirstPage {
         </section>
 
         <section>
-          <blockquote>With all these tools, it can be somewhat confusing for people to know what the differences are or even where to
-            start
+          <blockquote>Confusing to know the tool differences <br /><span class="fragment">and where to even start</span>
           </blockquote>
         </section>
 
         <section>
           <h3>Ionic CLI</h3>
           <p>Focus on writing your app</p>
-          <p>The build system handles everything else!</p>
+          <p>Build system handles everything else!</p>
           <p><em>It Just Works</em></p>
         </section>
       </section>
+      <section>
+        <h3>Ionic Tools</h3>
+        <p class="fragment"><a href="http://ionicframework.com/docs/cli/icon-splashscreen.html" target="_blank">Icon and Splash Screen Sizing</a></p>
+        <p class="fragment"><a href="http://view.ionic.io/" target="_blank">Ionic View (for v1..soon to be v2)</a></p>
+        <p class="fragment"><a href="https://creator.ionic.io/" target="_blank">Creator</a></p>
+        <p class="fragment"><a href="https://market.ionic.io/" target="_blank">Marketplace</a></p>
+        <p class="fragment"><a href="https://ionic.io/" target="_blank">Ionic Platform</a></p>
+<aside class="notes">
+Push Notifications<br />
+User Authentications<br />
+Native Builds<br />
+Live Updates<br />
+</aside>
+      </section>
+      <section>
+
+        <ul class="stretch" style="font-size: 1.5em;list-style-type: none;text-align:center">
+          <li style="white-space: nowrap;">
+            <h3>How it all comes together</h3>
+          </li>
+          <li style="margin-bottom: 10px;background: #20ab93" class="fragment" data-fragment-index="0">Your App</li>
+          <li style="background: #4c8df5;margin-bottom: 10px;" class="fragment" data-fragment-index="1">Ionic</li>
+          <li style="background: #d94442;margin-bottom: 10px;" class="fragment" data-fragment-index="2">Angular</li>
+          <li style="background: #3b4854;margin-bottom: 10px;" class="fragment" data-fragment-index="3">WebView (Cordova)</li>
+          <li style="background: rgb(0,2,80);margin-bottom: 10px;" class="fragment" data-fragment-index="4">Cordova Plugins</li>
+          <li style="margin-bottom: 10px;background: #d4deee; color: #3b4854;" class="fragment" data-fragment-index="5">Native App</li>
+        </ul>
+      </section>
+
       <section>
         <h1>Demo</h1>
         <p><a href="https://github.com/driftyco/ionic-conference-app" target="_blank">https://github.com/driftyco/ionic-conference-app</a>
@@ -573,10 +649,10 @@ export class FirstPage {
           <ul>
             <li class="fragment" data-fragment-index="0">Install <a href="http://nodejs.org" target="_blank">NodeJs</a></li>
             <li class="fragment" data-fragment-index="1">Install <a href="https://msysgit.github.io/" target="_blank">Git</a></li>
-            <li class="fragment" data-fragment-index="2">Globally install npm packages</li>
+            <li class="fragment" data-fragment-index="2">Globally npm packages</li>
           </ul>
           <pre class="fragment" data-fragment-index="2" style="text-align: center !important"><code>
-$ npm install -g gulp bower cordova ionic@beta
+$ npm install -g gulp cordova ionic@beta
 
 </code></pre>
         </section>
@@ -608,7 +684,7 @@ $ npm install -g gulp bower cordova ionic@beta
                 <td class="fragment" data-fragment-index="6" colspan="2" style="padding: 0;border-bottom: 0;vertical-align:top;">
                   <ul style="line-height: 1em;">
                     <li>Visual Studio Android Emulator</li>
-                   <li>Genymotion Emulator</li>
+                    <li>Genymotion Emulator</li>
                   </ul>
                 </td>
               </tr>
@@ -639,7 +715,7 @@ $ npm install -g gulp bower cordova ionic@beta
         <section>
           <h3>Add Page</h3>
           <pre class="bash" style="text-align: center !important"><code>ionic g page firstPage</code></pre>
-              
+
         </section>
         <section>
           <h3>Test In Web Browser</h3>
@@ -674,7 +750,7 @@ $ npm install -g gulp bower cordova ionic@beta
         </ul>
       </section>
       <section>
-            
+
         <div flex>
           <div col center>
             <img src="img/ionic-2-book-cover-image.png ">
@@ -683,8 +759,9 @@ $ npm install -g gulp bower cordova ionic@beta
             <p style="font-size: 1.3em">Great Book <br/>for Learning <br/>Ionic v2</p>
           </div>
         </div>
-                  <div row>
-              <p><a href="https://www.joshmorony.com/building-mobile-apps-with-ionic-2/ " target="_blank ">joshmorony.com/building-mobile-apps-with-ionic-2/</a></p></div>
+        <div row>
+          <p><a href="https://www.joshmorony.com/building-mobile-apps-with-ionic-2/ " target="_blank ">joshmorony.com/building-mobile-apps-with-ionic-2/</a></p>
+        </div>
 
       </section>
       <!-- Closing -->
