@@ -652,7 +652,7 @@ Live Updates<br />
             <li class="fragment" data-fragment-index="2">Globally npm packages</li>
           </ul>
           <pre class="fragment" data-fragment-index="2" style="text-align: center !important"><code>
-$ npm install -g gulp cordova ionic@beta
+$ npm install -g gulp cordova ionic
 
 </code></pre>
         </section>
@@ -833,16 +833,16 @@ $ npm install -g gulp cordova ionic@beta
           return !!document.querySelector('[data-markdown]');
         }
       },
-      //  {
-      //   src: 'plugin/highlight/highlight.js',
-      //   async: true,
-      //   condition: function() {
-      //     return !!document.querySelector('pre code');
-      //   },
-      //   callback: function() {
-      //     hljs.initHighlightingOnLoad();
-      //   }
-      // }, 
+       {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        condition: function() {
+          return !!document.querySelector('pre code');
+        },
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, 
       {
         src: 'plugin/zoom-js/zoom.js',
         async: true
